@@ -91,7 +91,7 @@ int main(void){
 	- As it is the only functionality of this microcontroller is to send these data so i used the Delay function as i don't have to 
 	make a timer run in the background and interrupt when the time is finished.
     */
-    for(;;)
+    while(1)
     {
         SWUART_send(Data);
         _dela_ms(100);
