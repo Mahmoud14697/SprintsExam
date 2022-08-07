@@ -86,8 +86,10 @@ int main(void){
     /* Variables initializations */
     uint8_t Data=0;
     /*
-        This Code will Send from 0 to 255 then it will overflow and start over again.
-        Sending will be 100 ms between the two send actions.
+        - This Code will Send from 0 to 255 then it will overflow and start over again.
+        - Sending will be 100 ms between the two send actions.
+	- As it is the only functionality of this microcontroller is to send these data so i used the Delay function as i don't have to 
+	make a timer run in the background and interrupt when the time is finished.
     */
     for(;;)
     {
